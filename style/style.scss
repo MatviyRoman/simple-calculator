@@ -123,12 +123,18 @@ body {
           }
         }
       }
-      .btn {
-        border: 2px solid $text-color;
-        padding: 5px;
-        font-size: 10px;
-        & + .btn {
-          margin-left: 30px;
+      .button {
+        form {
+          display: flex;
+          flex-wrap: nowrap;
+        }
+        .btn {
+          border: 2px solid $text-color;
+          padding: 5px;
+          font-size: 10px;
+          & + .btn {
+            margin-left: 30px;
+          }
         }
       }
     }
@@ -180,5 +186,11 @@ body {
         }
       }
     }
+  }
+}
+
+@media all and (max-width: 700px) {
+  .result {
+    font-size: 10px;
   }
 }
