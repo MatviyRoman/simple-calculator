@@ -144,13 +144,21 @@ body {
   border-bottom: 2px solid transparent;
 }
 
-.modal .wrapper .input .btn {
+.modal .wrapper .input .button form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.modal .wrapper .input .button .btn {
   border: 2px solid #487bd8;
   padding: 5px;
   font-size: 10px;
 }
 
-.modal .wrapper .input .btn + .btn {
+.modal .wrapper .input .button .btn + .btn {
   margin-left: 30px;
 }
 
@@ -215,5 +223,11 @@ body {
 
 .modal .wrapper .vertical input + input {
   margin-top: 10px;
+}
+
+@media all and (max-width: 700px) {
+  .result {
+    font-size: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
