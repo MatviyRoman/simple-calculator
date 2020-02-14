@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Mockup</title>
+  </head>
+  <body>
+    <div class="shadow closed"></div>
+    <section class="container">
+      <a href="#" class="btn" id="btn">Open modal</a>
+    </section>
+    <section class="modal" id="modal">
+      <div class="wrapper">
+        <div class="close"><span class="closed">x</span></div>
+        <div class="input">
+          <p>Simple Calc</p>
+          <p class="form first" id="form-first">
+            <input id="num1" type="number" placeholder="input..." />
+            <input id="operator1" type="text" placeholder="* / + -" />
+            <input id="num2" type="number" placeholder="input..." />
+          </p>
+
+          <p class="form" id="form-second">
+            <input id="num3" type="number" placeholder="input..." />
+            <input id="operator2" type="text" placeholder="* / + -" />
+            <input id="num4" type="number" placeholder="input..." />
+          </p>
+          <p class="form" id="form-third">
+            <input id="num5" type="number" placeholder="input..." />
+            <input id="operator3" type="text" placeholder="* / + -" />
+            <input id="num6" type="number" placeholder="input..." />
+          </p>
+          <p class="form text">Choose box</p>
+          <span class="button">
+            <form action="/action_page.php">
+              <span class="btn">
+                <input
+                  type="radio"
+                  id="sum"
+                  name="sum"
+                  value="Sum"
+                  onclick="myCheck1();showresult('1')"
+                />
+                <label for="male">Sum</label>
+              </span>
+              <span class="btn">
+                <input
+                  type="radio"
+                  id="multiply"
+                  name="multiply"
+                  value="multiply"
+                />
+                <label for="male">Multiply</label>
+              </span>
+            </form>
+          </span>
+        </div>
+        <div class="result">
+          <p>Results</p>
+          <p id="result1">number</p>
+          <p id="result2">number</p>
+          <p id="result3">number</p>
+        </div>
+        <form class="vertical" action="/action_page.php">
+          <input
+            type="checkbox"
+            id="check1"
+            name="chek1"
+            value="first"
+            onclick="myCheck1();showresult('1')"
+          />
+          <input
+            type="checkbox"
+            id="check2"
+            name="chek2"
+            value="second"
+            onclick="myCheck2();showresult('2')"
+          />
+          <input
+            type="checkbox"
+            id="check3"
+            name="chek3"
+            value="third"
+            onclick="myCheck3();showresult('3')"
+          />
+        </form>
+      </div>
+    </section>
+    <script src="js/main.js"></script>
+  </body>
+</html>

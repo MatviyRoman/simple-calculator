@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 15px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  background: #b0afaf;
+  border: 2px solid #487bd8;
+  padding: 5px;
+  margin: 20px;
+  border-top: 1px solid transparent;
+  display: inline-block;
+}
+
+body {
+  background: #fefefe;
+  color: #487bd8;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+.shadow {
+  width: 100%;
+  height: 100%;
+  background: #b0afaf;
+  opacity: 0.7;
+  display: none;
+  position: fixed;
+  z-index: 1;
+}
+
+.container {
+  max-width: calc(1000px - 60px);
+  background: #2a572e;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  min-height: 80px;
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-width: 540px;
+  min-height: 320px;
+  background: #fefefe;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 0px 6px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 6px 5px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+  z-index: 1;
+}
+
+.modal .wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 50px 20px 40px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.modal .wrapper .close {
+  position: absolute;
+  top: 8%;
+  left: 7%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 2px solid #487bd8;
+  width: 22px;
+  cursor: pointer;
+}
+
+.modal .wrapper .close span {
+  display: block;
+  margin: 0 auto;
+  width: 8px;
+}
+
+.modal .wrapper .input {
+  width: 80%;
+}
+
+.modal .wrapper .input p {
+  width: 100%;
+}
+
+.modal .wrapper .input p:nth-child(odd) {
+  padding: 5px 25px 10px;
+  max-height: 36px;
+  height: 100%;
+  border: 2px solid #487bd8;
+  border-width: 1px 2px 1px 3px;
+}
+
+.modal .wrapper .input p:nth-child(even) {
+  padding: 15px 25px 20px;
+  max-height: 54px;
+  height: 100%;
+  border: solid #487bd8;
+  border-width: 1px 2px 1px 3px;
+}
+
+.modal .wrapper .input p:nth-child(5) {
+  border-left: 2px solid #fefefe;
+  border-right: 2px solid #fefefe;
+}
+
+.modal .wrapper .input p:first-child {
+  border-top: 3px solid #fefefe;
+  border-left: 3px solid #fefefe;
+}
+
+.modal .wrapper .input p.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.modal .wrapper .input p.form input {
+  width: 30%;
+  outline: none;
+  border: 2px solid #487bd8;
+  font-size: 10px;
+}
+
+.modal .wrapper .input p.form.text {
+  padding-left: 0;
+  border-bottom: 2px solid transparent;
+}
+
+.modal .wrapper .input .btn {
+  border: 2px solid #487bd8;
+  padding: 5px;
+  font-size: 10px;
+}
+
+.modal .wrapper .input .btn + .btn {
+  margin-left: 30px;
+}
+
+.modal .wrapper .result {
+  width: 20%;
+  text-align: center;
+}
+
+.modal .wrapper .result p {
+  text-transform: capitalize;
+  font-size: 12px;
+  width: 100%;
+}
+
+.modal .wrapper .result p:first-child {
+  font-size: 15px;
+}
+
+.modal .wrapper .result p:nth-child(odd) {
+  padding: 5px 0 10px;
+  max-height: 36px;
+  height: 100%;
+  border: solid #487bd8;
+  border-width: 1px 2px 1px 2px;
+}
+
+.modal .wrapper .result p:nth-child(even) {
+  padding: 15px 0 20px;
+  max-height: 55px;
+  height: 100%;
+  border-style: solid;
+  border-color: #487bd8;
+  border-width: 2px 2px 2px 2px;
+}
+
+.modal .wrapper .result p:last-child {
+  border-color: #487bd8;
+  border-bottom: 3px solid #487bd8;
+}
+
+.modal .wrapper .vertical {
+  position: absolute;
+  border: 2px solid #487bd8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 50%;
+  left: 36px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 5px;
+}
+
+.modal .wrapper .vertical input {
+  width: 20px;
+  height: 20px;
+}
+
+.modal .wrapper .vertical input + input {
+  margin-top: 10px;
+}
+/*# sourceMappingURL=style.css.map */
